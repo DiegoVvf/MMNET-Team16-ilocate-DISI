@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<IndoorFeatures xmlns="http://www.opengis.net/indoorgml/core/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://www.opengis.net/indoorgml/core/1.0 IndoorGMLCore.xsd" gml:id="IFS">
+    <MultiLayeredGraph gml:id="MLG">
+        <spaceLayers gml:id="SLs">
+            <spaceLayerMember>
+                <spaceLayer gml:id="walking">
+                    <nodes gml:id="Nodes">
+                        <stateMember>
+                            <State gml:id="S10164">
+<name>S10164</name>
+<connects gml:id="CON10164">
+    <transitionMember xlink:href="#T10176"/>
+</connects>
+<geometry>
+    <gml:point gml:id="P10164">
+        <gml:pos>46.067835735415 11.149478398637 0</gml:pos>
+    </gml:point>
+</geometry>
+                            </State>
+                        </stateMember>
+                        <stateMember>
+                            <State gml:id="S10165">
+<name>S10165</name>
+<connects gml:id="CON10165">
+    <transitionMember xlink:href="#T10176"/>
+    <transitionMember xlink:href="#T10177"/>
+</connects>
+<geometry>
+    <gml:point gml:id="P10165">
+        <gml:pos>46.067833053206 11.149541430549 0</gml:pos>
+    </gml:point>
+</geometry>
+                            </State>
+                        </stateMember>
+                        <stateMember>
+                            <State gml:id="S10166">
+<name>S10166</name>
+<connects gml:id="CON10166">
+    <transitionMember xlink:href="#T10177"/>
+    <transitionMember xlink:href="#T10178"/>
+    <transitionMember xlink:href="#T10187"/>
+</connects>
+<geometry>
+    <gml:point gml:id="P10166">
+        <gml:pos>46.067831041549 11.149622567372 0</gml:pos>
+    </gml:point>
+</geometry>
+                            </State>
+                        </stateMember>
+                        <stateMember>
+                            <State gml:id="S10167">
+<name>S10167</name>
+<connects gml:id="CON10167">
+    <transitionMember xlink:href="#T10178"/>
+    <transitionMember xlink:href="#T10179"/>
+    <transitionMember xlink:href="#T10186"/>
+</connects>
+<geometry>
+    <gml:point gml:id="P10167">
+        <gml:pos>46.067853169773 11.149784170465 0</gml:pos>
+    </gml:point>
+</geometry>
+                            </State>
+                        </stateMember>
+                        <stateMember>
+                            <State gml:id="S10168">
+<name>S10168</name>
+<connects gml:id="CON10168">
+    <transitionMember xlink:href="#T10179"/>
+    <transitionMember xlink:href="#T10180"/>
+</connects>
+<geometry>
+    <gml:point gml:id="P10168">
+        <gml:pos>46.067849817012 11.149904869871 0</gml:pos>
+    </gml:point>
+</geometry>
+                            </State>
+                        </stateMember>
+                        <stateMember>
+                            <State gml:id="S10169">
+<name>S10169</name>
+<connects gml:id="CON10169">
+    <transitionMember xlink:href="#T10180"/>
+</connects>
+<geometry>
+    <gml:point gml:id="P10169">
+        <gml:pos>46.067825006579 11.149901517110 0</gml:pos>
+    </gml:point>
+</geometry>
+                            </State>
+                        </stateMember>
+                        <stateMember>
+                            <State gml:id="S10170">
+<name>S10170</name>
+<connects gml:id="CON10170">
+    <transitionMember xlink:href="#T10181"/>
+    <transitionMember xlink:href="#T10186"/>
+    <transitionMember xlink:href="#T10187"/>
+</connects>
+<geometry>
+    <gml:point gml:id="P10170">
+        <gml:pos>46.068431856368 11.149815686421 0</gml:pos>
+    </gml:point>
+</geometry>
+                            </State>
+                        </stateMember>
+                        <stateMember>
+                            <State gml:id="S10171">
+<name>S10171</name>
+<connects gml:id="CON10171">
+    <transitionMember xlink:href="#T10181"/>
+    <transitionMember xlink:href="#T10182"/>
+    <transitionMember xlink:href="#T10183"/>
+</connects>
+<geometry>
+    <gml:point gml:id="P10171">
+        <gml:pos>46.068429844711 11.149927668648 0</gml:pos>
+    </gml:point>
+</geometry>
+                            </State>
+                        </stateMember>
+                        <stateMember>
+                            <State gml:id="S10172">
+<name>S10172</name>
+<connects gml:id="CON10172">
+    <transitionMember xlink:href="#T10183"/>
+    <transitionMember xlink:href="#T10184"/>
+</connects>
+<geometry>
+    <gml:point gml:id="P10172">
+        <gml:pos>46.068426491950 11.149973266201 0</gml:pos>
+    </gml:point>
+</geometry>
+                            </State>
+                        </stateMember>
+                        <stateMember>
+                            <State gml:id="S10173">
+<name>S10173</name>
+<connects gml:id="CON10173">
+    <transitionMember xlink:href="#T10184"/>
+    <transitionMember xlink:href="#T10185"/>
+</connects>
+<geometry>
+    <gml:point gml:id="P10173">
+        <gml:pos>46.068392964337 11.149973266201 0</gml:pos>
+    </gml:point>
+</geometry>
+                            </State>
+                        </stateMember>
+                        <stateMember>
+                            <State gml:id="S10174">
+<name>S10174</name>
+<connects gml:id="CON10174">
+    <transitionMember xlink:href="#T10182"/>
+</connects>
+<geometry>
+    <gml:point gml:id="P10174">
+        <gml:pos>46.068396317099 11.149930350857 0</gml:pos>
+    </gml:point>
+</geometry>
+                            </State>
+                        </stateMember>
+                        <stateMember>
+                            <State gml:id="S10175">
+<name>S10175</name>
+<connects gml:id="CON10175">
+    <transitionMember xlink:href="#T10185"/>
+</connects>
+<geometry>
+    <gml:point gml:id="P10175">
+        <gml:pos>46.068393634890 11.150012158232 0</gml:pos>
+    </gml:point>
+</geometry>
+                            </State>
+                        </stateMember>
+                    </nodes>
+                    <edges gml:id="Edges">
+                        <transitionMember>
+                            <Transition gml:id="T10176">
+<gml:name>T10176</gml:name>
+<weight>1</weight>
+<start xlink:href="#S10164"/>
+<end xlink:href="#S10165"/>
+<geometry>
+    <gml:LineString gml:id="LS10176">
+        <gml:pos>46.067835735415 11.149478398637 0</gml:pos>
+        <gml:pos>46.067833053206 11.149541430549 0</gml:pos>
+    </gml:LineString>
+</geometry>
+                            </Transition>
+                        </transitionMember>
+                        <transitionMember>
+                            <Transition gml:id="T10177">
+<gml:name>T10177</gml:name>
+<weight>1</weight>
+<start xlink:href="#S10166"/>
+<end xlink:href="#S10165"/>
+<geometry>
+    <gml:LineString gml:id="LS10177">
+        <gml:pos>46.067831041549 11.149622567372 0</gml:pos>
+        <gml:pos>46.067833053206 11.149541430549 0</gml:pos>
+    </gml:LineString>
+</geometry>
+                            </Transition>
+                        </transitionMember>
+                        <transitionMember>
+                            <Transition gml:id="T10178">
+<gml:name>T10178</gml:name>
+<weight>1</weight>
+<start xlink:href="#S10167"/>
+<end xlink:href="#S10166"/>
+<geometry>
+    <gml:LineString gml:id="LS10178">
+        <gml:pos>46.067853169773 11.149784170465 0</gml:pos>
+        <gml:pos>46.067831041549 11.149622567372 0</gml:pos>
+    </gml:LineString>
+</geometry>
+                            </Transition>
+                        </transitionMember>
+                        <transitionMember>
+                            <Transition gml:id="T10179">
+<gml:name>T10179</gml:name>
+<weight>1</weight>
+<start xlink:href="#S10168"/>
+<end xlink:href="#S10167"/>
+<geometry>
+    <gml:LineString gml:id="LS10179">
+        <gml:pos>46.067849817012 11.149904869871 0</gml:pos>
+        <gml:pos>46.067853169773 11.149784170465 0</gml:pos>
+    </gml:LineString>
+</geometry>
+                            </Transition>
+                        </transitionMember>
+                        <transitionMember>
+                            <Transition gml:id="T10180">
+<gml:name>T10180</gml:name>
+<weight>1</weight>
+<start xlink:href="#S10169"/>
+<end xlink:href="#S10168"/>
+<geometry>
+    <gml:LineString gml:id="LS10180">
+        <gml:pos>46.067825006579 11.149901517110 0</gml:pos>
+        <gml:pos>46.067849817012 11.149904869871 0</gml:pos>
+    </gml:LineString>
+</geometry>
+                            </Transition>
+                        </transitionMember>
+                        <transitionMember>
+                            <Transition gml:id="T10181">
+<gml:name>T10181</gml:name>
+<weight>1</weight>
+<start xlink:href="#S10170"/>
+<end xlink:href="#S10171"/>
+<geometry>
+    <gml:LineString gml:id="LS10181">
+        <gml:pos>46.068431856368 11.149815686421 0</gml:pos>
+        <gml:pos>46.068429844711 11.149927668648 0</gml:pos>
+    </gml:LineString>
+</geometry>
+                            </Transition>
+                        </transitionMember>
+                        <transitionMember>
+                            <Transition gml:id="T10182">
+<gml:name>T10182</gml:name>
+<weight>1</weight>
+<start xlink:href="#S10174"/>
+<end xlink:href="#S10171"/>
+<geometry>
+    <gml:LineString gml:id="LS10182">
+        <gml:pos>46.068396317099 11.149930350857 0</gml:pos>
+        <gml:pos>46.068429844711 11.149927668648 0</gml:pos>
+    </gml:LineString>
+</geometry>
+                            </Transition>
+                        </transitionMember>
+                        <transitionMember>
+                            <Transition gml:id="T10183">
+<gml:name>T10183</gml:name>
+<weight>1</weight>
+<start xlink:href="#S10172"/>
+<end xlink:href="#S10171"/>
+<geometry>
+    <gml:LineString gml:id="LS10183">
+        <gml:pos>46.068426491950 11.149973266201 0</gml:pos>
+        <gml:pos>46.068429844711 11.149927668648 0</gml:pos>
+    </gml:LineString>
+</geometry>
+                            </Transition>
+                        </transitionMember>
+                        <transitionMember>
+                            <Transition gml:id="T10184">
+<gml:name>T10184</gml:name>
+<weight>1</weight>
+<start xlink:href="#S10173"/>
+<end xlink:href="#S10172"/>
+<geometry>
+    <gml:LineString gml:id="LS10184">
+        <gml:pos>46.068392964337 11.149973266201 0</gml:pos>
+        <gml:pos>46.068426491950 11.149973266201 0</gml:pos>
+    </gml:LineString>
+</geometry>
+                            </Transition>
+                        </transitionMember>
+                        <transitionMember>
+                            <Transition gml:id="T10185">
+<gml:name>T10185</gml:name>
+<weight>1</weight>
+<start xlink:href="#S10175"/>
+<end xlink:href="#S10173"/>
+<geometry>
+    <gml:LineString gml:id="LS10185">
+        <gml:pos>46.068393634890 11.150012158232 0</gml:pos>
+        <gml:pos>46.068392964337 11.149973266201 0</gml:pos>
+    </gml:LineString>
+</geometry>
+                            </Transition>
+                        </transitionMember>
+                        <transitionMember>
+                            <Transition gml:id="T10186">
+<gml:name>T10186</gml:name>
+<weight>1</weight>
+<start xlink:href="#S10167"/>
+<end xlink:href="#S10170"/>
+<geometry>
+    <gml:LineString gml:id="LS10186">
+        <gml:pos>46.067853169773 11.149784170465 0</gml:pos>
+        <gml:pos>46.068431856368 11.149815686421 0</gml:pos>
+    </gml:LineString>
+</geometry>
+                            </Transition>
+                        </transitionMember>
+                        <transitionMember>
+                            <Transition gml:id="T10187">
+<gml:name>T10187</gml:name>
+<weight>1</weight>
+<start xlink:href="#S10166"/>
+<end xlink:href="#S10170"/>
+<geometry>
+    <gml:LineString gml:id="LS10187">
+        <gml:pos>46.067831041549 11.149622567372 0</gml:pos>
+        <gml:pos>46.068431856368 11.149815686421 0</gml:pos>
+    </gml:LineString>
+</geometry>
+                            </Transition>
+                        </transitionMember>
+                    </edges>
+                </spaceLayer>
+            </spaceLayerMember>
+        </spaceLayers>
+    </MultiLayeredGraph>
+</IndoorFeatures>
