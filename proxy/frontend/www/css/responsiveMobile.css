@@ -1,0 +1,144 @@
+/*----------------------------------------------------------------------------------------*/
+/*------------------------------------ MEDIA QUERY ---------------------------------------*/
+
+#nav{
+	background-color: #8cc53d;
+    bottom: 0 !important;
+    height: 75px;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: auto !important;
+    width: 100%;
+}
+
+/*@media screen and (min-width: 320px) {
+	#nav{
+		position: fixed;
+		bottom:0px;
+		top:initial;
+		left: 0;
+		right: 0;
+		height: 75px;
+		background-color: #8cc53d;
+	}*/
+
+	/*#nav ul li{
+		height: 85px;
+		background-repeat: no-repeat;
+		background-position: center right;
+	}
+
+	#nav ul li.active{background-image: url("../images/demo/arrow.png");}
+
+	#nav ul li a{
+		display: block;
+		height: 80px;	
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+
+	#nav ul li#personalInfo a{background-image: url("../images/demo/personalInfo.png");}
+	#nav ul li#personalInterest a{background-image: url("../images/demo/personalInterest.png");}
+	#nav ul li#holidayIdea a{background-image: url("../images/demo/holidayIdea.png");}
+
+	#nav ul li#personalInfo.active a,
+	#nav ul li#personalInfo:hover a{background-image: url("../images/demo/personalInfo_active.png");}
+	#nav ul li#personalInterest.active a,
+	#nav ul li#personalInterest:hover a{background-image: url("../images/demo/personalInterest_active.png");}
+	#nav ul li#holidayIdea.active a,
+	#nav ul li#holidayIdea:hover a{background-image: url("../images/demo/holidayIdea_active.png");}
+
+	#nav ul li img{
+		display: block;
+		margin: 0 auto;
+	}
+
+}*/
+
+/*
+
+@media screen and (max-width: 1151px) {
+	table tr td.key{
+		width:30%;
+		padding-right: 4%;
+	}
+	table tr td.value{width:68%;}
+	#basic{padding: 7% 1% !important;}
+}
+
+@media screen and (max-width: 1025px) {
+	.didYouKnow{  
+		margin-right: 2%;
+    	width: 19%;
+    }	
+}
+
+@media screen and (max-width: 870px) {
+	table tr td.key{
+		width:35%;
+		padding-right: 4%;
+	}
+	table tr td.value{width:63%;}
+	#basic{padding: 7% 1% !important;}
+}
+
+@media screen and (max-width: 801px) {
+	.didYouKnow {
+	    float: none;
+	    margin-right: 2%;
+	    margin-bottom: 15px;
+	    padding: 3%;
+	    width: 94%;
+	}
+	.infoContainer {
+	    margin-bottom: 15px;
+	    margin-right: 2%;
+	    float: none;
+	    padding: 3%;
+	    width: 94%;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.infoContainer>div{
+		width: 97%;
+		min-height: 1px;
+		float: none;
+		padding:0 3%;	
+	}
+	div#photoName div#image {float: left;}
+	div#photoName h4 {
+	    float: left;
+	    margin: -100px 0 0 45%;
+	}
+	#basic {padding: 3% 1% 0 1% !important;}
+	#work,#places{margin-top: 7%;}
+}
+
+@media screen and (max-width: 520px) {
+	#login{width: 110px;}
+	h2{display: none;}
+	div#photoName h4 {
+		line-height: 33px;
+		margin: -120px 0 0 45%;
+	}
+}
+
+@media screen and (max-width: 475px) {
+	div#photoName div#image {float: none;}
+	div#photoName h4 {
+	    float: none;
+	    margin: 0px;
+	}
+}
+
+@media screen and (max-width: 375px) {
+	#login div#image{display: none;}
+	#login{width: 55px;}
+	table{width: 203px;}
+	table tr td.key{padding-right: 2%;}
+	table tr td.value{max-width: 125px;}
+}
+
+*/

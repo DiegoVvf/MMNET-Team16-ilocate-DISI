@@ -1,0 +1,90 @@
+/*----------------------------------------------------------------------------------------*/
+/*------------------------------------ MEDIA QUERY ---------------------------------------*/
+
+@media screen and (max-width: 1281px) {
+	#basic{padding: 5% 1% !important;}
+}
+
+@media screen and (max-width: 1151px) {
+	table tr td.key{
+		width:30%;
+		padding-right: 4%;
+	}
+	table tr td.value{width:68%;}
+	#basic{padding: 7% 1% !important;}
+}
+
+@media screen and (max-width: 1025px) {
+	.didYouKnow{  
+		margin-right: 2%;
+    	width: 19%;
+    }	
+}
+
+@media screen and (max-width: 870px) {
+	table tr td.key{
+		width:35%;
+		padding-right: 4%;
+	}
+	table tr td.value{width:63%;}
+	#basic{padding: 7% 1% !important;}
+}
+
+@media screen and (max-width: 801px) {
+	.didYouKnow {
+	    float: none;
+	    margin-right: 2%;
+	    margin-bottom: 15px;
+	    padding: 3%;
+	    width: 94%;
+	}
+	.infoContainer {
+	    margin-bottom: 15px;
+	    margin-right: 2%;
+	    float: none;
+	    padding: 3%;
+	    width: 94%;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.infoContainer>div{
+		width: 97%;
+		min-height: 1px;
+		float: none;
+		padding:0 3%;	
+	}
+	div#photoName div#image {float: left;}
+	div#photoName h4 {
+	    float: left;
+	    margin: -100px 0 0 45%;
+	}
+	#basic {padding: 3% 1% 0 1% !important;}
+	#work,#places{margin-top: 7%;}
+}
+
+@media screen and (max-width: 520px) {
+	#login{width: 110px;}
+	h2{display: none;}
+	div#photoName h4 {
+		line-height: 33px;
+		margin: -120px 0 0 45%;
+	}
+}
+
+@media screen and (max-width: 475px) {
+	div#photoName div#image {float: none;}
+	div#photoName h4 {
+	    float: none;
+	    margin: 0px;
+	}
+}
+
+@media screen and (max-width: 375px) {
+	#login div#image{display: none;}
+	#login{width: 55px;}
+	table{width: 203px;}
+	table tr td.key{padding-right: 2%;}
+	table tr td.value{max-width: 125px;}
+}
+

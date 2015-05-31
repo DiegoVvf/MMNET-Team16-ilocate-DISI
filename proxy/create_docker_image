@@ -1,0 +1,14 @@
+#!/bin/bash
+
+VERSION=1.0
+CONTAINER=ilocate/portal
+
+if [[ -z "$1" ]]
+then
+	echo "No version is supplied, imposing default value and creating image \"$CONTAINER:$VERSION\""
+else
+	VERSION=$1
+	echo "Creating image \"$CONTAINER:$VERSION\""
+fi
+
+docker build -t $CONTAINER:$VERSION .

@@ -1,0 +1,212 @@
+/**
+ * styles.css
+ *
+ * @author: carlo caprini <carlo.caprini@u-hopper.com>
+ */
+
+/* Syntax recommendation http://www.w3.org/TR/REC-CSS2/ */
+
+root {
+    display: block;
+}
+
+/** fix for bootstrap influence on google maps visualization */
+.map label { width: auto; display:inline; }
+.map img { max-width: none; }
+
+.hero-unit {
+    /*color: #4a4d59;*/
+    /*background-color:#808080;*/
+   background-color:white;
+}
+
+.p-breadcrumbs {
+	color: white;
+}
+
+.background-dark {
+	background-color:#808080;
+}
+
+.background-white {
+	background-color:white;
+}
+
+.sidebar-dark {
+	background-color:#808080;
+	color: white;
+}
+
+.form {
+	color: #4a4d59;
+}
+
+.sidebar-nav-fixed {
+    /*padding: 9px 0;*/
+    position:fixed;
+    /*left:70px;*/
+    /*top:125px;*/
+    width:250px;
+}
+
+.row-fluid > .span-fixed-sidebar {
+    margin-left: 290px;
+}
+
+.underline {
+	text-decoration: underline;
+}
+
+.text-white {
+	color: white;
+}
+
+.text-gray {
+	color: #4a4d59;
+}
+
+.text-orange {
+	color: orange;
+}
+
+/* Link colors */
+
+.link-gray a:link {
+    color: #4a4d59;
+    font-weight:normal;
+}
+
+.link-gray a:visited {
+    color: #4a4d59;
+    font-weight:normal;
+}
+
+.link-orange a:link {
+	color:orange;
+	font-weight:bold;
+}
+
+.link-orange a:visited {
+	color:orange;
+	font-weight:bold;
+}
+
+.navbar .nav {
+    padding-top: 9px;
+}
+
+/* Orange buttons */
+.button-orange a:link {
+	color:white;
+}
+
+.button-orange a:visited {
+	color:white;
+}
+
+/* White wells */
+
+.form-orange {
+	border-left: 5px solid orange;
+}
+
+.well-white {
+	color:#4a4d59;
+	background-color: white;
+}
+
+.well-border-red {
+	border-top: 4px solid red;
+}
+
+.well-border-orange {
+	border-top: 4px solid orange;
+}
+
+.well-border-blue {
+	border-top: 4px solid blue;
+}
+
+.well-border-green {
+	border-top: 4px solid green;
+}
+	
+.well-orange-border {
+	border-top: 20px solid orange;
+	border-bottom: 5px solid orange;
+}
+
+.well-white a:link {
+	/*color:orange;
+	font-weight:bold;*/
+}
+
+.well-white a:visited {
+	/*color:orange;*/
+	/*font-weight:bold;*/
+}
+
+.sidebar-nav a:visited {
+	color:#4a4d59;
+}
+
+.nav-header {
+	color:#4a4d59;
+}
+
+.nav {
+	color:red;
+	font-weight:bold;
+}
+
+.footer {
+	color: #4a4d59;
+}
+
+.footer a:visited{
+	color:orange;
+	font-weight:bold;
+}
+
+.footer a:link{
+	color:orange;
+	font-weight:bold;
+}
+
+/*a:link {
+	color:orange;
+}*/
+
+/*a:visited {
+	color:orange;
+}*/
+
+.link-white a:link {
+	color:white;
+	text-shadow:none;
+}
+
+.link-white a:visited {
+	color:white;
+	text-shadow:none;
+}
+
+/*#footer {
+   position:relative;
+   bottom:0;
+   width:90%;
+   height:150px;   /* Height of the footer */
+   /*background:#6cf;*/
+/*}*/
+
+/*.link-white a:hover {
+	color: #808080;
+	font-weight:bold;
+}
+
+.link-white a:hover {
+	color: #808080;
+	font-weight:bold;
+}*/
+
+

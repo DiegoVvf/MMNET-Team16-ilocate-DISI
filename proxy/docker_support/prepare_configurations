@@ -1,0 +1,89 @@
+#!/usr/bin/python
+import maestro.guestutils as mgu
+from maestro.extensions.logging.logstash import run_service
+import sys
+import os
+from string import Template
+
+YII_CONFIG_FILE = "/app/common/config/params-local.php"
+
+ARG_PREFIX=""
+
+#ARGS are set in Maestro yaml file with the _R__ prefix
+MAESTRO_ARGS = [
+    "MYSQL_DATABASE",
+    "MYSQL_USER",
+    "MYSQL_PASSWORD"]
+
+def add_prefix(arg_name):
+        return ARG_PREFIX+arg_name
+
+
+def check_environment(env):
+        def is_int(v):
+                try:
+                        int(v)
+                        return True
+                except ValueError:
+                        return False
+        error_messages=[]
+        invalid_args = set([k for k,v in env.items() if v is None])
+        if invalid_args:
+                error_messages+=["Missing argument: {0}".format(add_prefix(a)) for a in invalid_args]
+        #wrongtype_args = [k for k in INT_ARGS if k not in invalid_args and not is_int(env[k])]
+        #if wrongtype_args:
+        #        error_messages+=["Argument [{0}] not an integer as expected".format(add_prefix(a)) for a in wrongtype_args]
+        if error_messages:
+                sys.exit("\n".join(error_messages))
+        return env
+
+def read_environment():
+        def get_value(arg_name):
+                complete_arg_name = add_prefix(arg_name)
+                ret = os.environ[complete_arg_name] if complete_arg_name in os.environ else None
+                return ret
+        return check_environment({a:get_value(a) for a in MAESTRO_ARGS})
+
+def get_service(service, ports):
+        addresses = mgu.get_node_list(service, ports=ports, minimum=0)
+        error_message = None
+
+        if not addresses:
+                error_message = "Cannot find service [%s:%s]" % (service,repr(ports))
+        elif len(addresses) > 1:
+                error_message = "Looking for service [%s:%s], found too many: %s" % (service,repr(ports),repr(addresses))
+        if error_message is not None:
+                sys.exit(error_message)
+        return addresses[0]
+
+def write_yii_config_file(env, **kwargs):
+        template_lines = (
+                "<?php return array( ",
+                   "  'env.code' => 'private',",
+                   "  'db.connectionString' => 'mysql:host=${DB_HOST};port=${DB_PORT};dbname=${MYSQL_DATABASE}',",
+                   "  'db.username' => '${MYSQL_USER}',",
+                   "  'db.password' => '${MYSQL_PASSWORD}',",
+               ");")
+        template = Template("\n".join(template_lines))
+        output_string = template.substitute(environment, **kwargs)
+        print output_string
+        with open(YII_CONFIG_FILE, "w") as config:
+                config.write(output_string)
+
+print "Reading environment variables"
+
+environment = read_environment()
+
+print environment;
+
+print "Writing configuration file"
+
+db_address = get_service('mysql', ['mysql'])
+db_address_parts = db_address.split(":")
+
+write_yii_config_file(
+       environment,
+       DB_HOST=db_address_parts[0],
+       DB_PORT=db_address_parts[1]
+    )
+

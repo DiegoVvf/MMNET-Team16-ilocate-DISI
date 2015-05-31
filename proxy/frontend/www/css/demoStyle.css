@@ -1,0 +1,565 @@
+body{font-family: 'Open Sans', sans-serif;}
+#container{background-color: #fff;}
+
+/* ----------------------------- Header -------------------------------- */
+
+#header{
+	position: fixed;
+	z-index: 100;
+	top:0;
+	left: 0;
+	right: 0;
+	height: 60px;
+	background-color: #717171;
+}
+
+#logo{
+	width: 80px;
+	height: 60px;
+	float: left;
+	background-color: #545454;
+}
+
+#logo img{
+	display: block;
+	margin: 0 auto;
+	padding: 8px 0 0 0;
+}
+
+h1{
+	text-transform: uppercase;
+	font-weight: lighter;
+	color: #fff;
+	font-size: 13px;
+	text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.2);
+	line-height: 60px;
+	padding: 0 0 0 15px;
+	float: left;
+}
+
+#login{
+	width: 250px;
+	height: 60px;
+	position: fixed;
+	right: 0px;
+	z-index : 100;
+	top : 0px;
+	background-color: #545454;
+}
+
+#login div#image{
+	margin: 9px 0 0 15px;
+	width: 41px;
+	height: 41px;
+	float: left;
+	overflow: hidden;
+}
+
+#login div#image div#small_picture{
+	width: 41px;
+	height: 41px;
+	background-image: url("../images/demo/imageShape.png");
+	position: absolute;
+}
+
+#login div#image img{width: 100%;}
+
+h2{
+	font-weight: lighter;
+	color: #fff;
+	font-size: 13px;
+	text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.2);
+	line-height: 60px;
+	padding: 0 0 0 15px;
+	float: left;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	width: 125px;
+}
+
+a#logout{
+	display: block;
+	width: 20px;
+	height:21px;
+	background-image: url("../images/demo/power.png");
+	float: right;
+	margin: 20px 15px 15px 15px;
+}
+
+a#logout:hover{background-image: url("../images/demo/power_hover.png");}
+
+/* ----------------------------- Navigation -------------------------------- */
+
+#nav{
+	position: fixed;
+	top:60px;
+	left: 0;
+	bottom: 0;
+	width: 80px;
+	background-color: #8cc53d;
+}
+
+#nav ul li{
+	height: 85px;
+	background-repeat: no-repeat;
+	background-position: center right;
+}
+
+#nav ul li.active{background-image: url("../images/demo/arrow.png");}
+
+#nav ul li a{
+	display: block;
+	height: 80px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+#nav ul li#personalInfo a{background-image: url("../images/demo/personalInfo.png");}
+#nav ul li#personalPlaces a{background-image: url("../images/demo/marker.png");}
+#nav ul li#personalInterest a{background-image: url("../images/demo/personalInterest.png");}
+#nav ul li#holidayIdea a{background-image: url("../images/demo/holidayIdea.png");}
+
+#nav ul li#personalInfo.active a,
+#nav ul li#personalInfo:hover a{background-image: url("../images/demo/personalInfo_active.png");}
+#nav ul li#personalPlaces.active a,
+#nav ul li#personalPlaces:hover a{background-image: url("../images/demo/marker_active.png");}
+#nav ul li#personalInterest.active a,
+#nav ul li#personalInterest:hover a{background-image: url("../images/demo/personalInterest_active.png");}
+#nav ul li#holidayIdea.active a,
+#nav ul li#holidayIdea:hover a{background-image: url("../images/demo/holidayIdea_active.png");}
+
+#nav ul li img{
+	display: block;
+	margin: 0 auto;
+}
+
+ul#nav_bottom{
+	bottom: 0;
+  left: 0;
+  position: absolute;
+  width: 80px;
+	cursor:pointer;
+}
+
+ul#nav_bottom li#navDidYouKnow span{
+	display:block;
+	height:80px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-image: url("../images/demo/didYouKnow.png");
+}
+
+ul#nav_bottom li#navDidYouKnow span.active,
+ul#nav_bottom li#navDidYouKnow span:hover{
+	background-image: url("../images/demo/didYouKnow_active.png");
+}
+
+/* ----------------------------- Content -------------------------------- */
+
+#content{
+	position: absolute;
+	top:75px;
+	left: 95px;
+	right:15px;
+}
+
+/* ----------- Did you know ------------- */
+
+.didYouKnow{
+	width:98.2%;
+	padding: 1%;
+	margin-right:1%;
+	margin-bottom:15px;
+	background-color: #eee;
+}
+
+div#containerDidYouKnow.close{display: none;}
+#containerDidYouKnow.open{display: block;}
+.didYouKnow img{float: left;}
+
+.didYouKnow h3{
+	font-family: 'Oswald', sans-serif;
+	font-size: 20px;
+	color:#0fbee4;
+	text-shadow: 1px 1px 0px rgba(255, 255, 255, 1);
+	margin: 10px 0 30px 50px;
+}
+
+.didYouKnow p{
+	color:#717171;
+	font-size: 13px;
+	line-height: 22px;
+	text-align: justify;
+	margin-bottom: 20px;
+	text-shadow: 1px 1px 0px rgba(255, 255, 255, 1);
+	column-count:3;
+	-moz-column-count:3;
+	-webkit-column-count:3;
+	-webkit-column-gap: 40px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 40px; /* Firefox */
+    column-gap: 40px;
+}
+
+.closeX {
+	float: right;
+	cursor:pointer;
+	width:15px;
+	height:15px;
+	display:block;
+	background-image:url("../images/demo/close.png")
+}
+
+.closeX:hover{
+	background-image:url("../images/demo/close_hover.png")
+}
+
+/* ----------- Containers ------------- */
+
+.infoContainer{
+	position: relative;
+	background-color: #eee;
+	float: left;
+	width: 75%;
+	padding: 1%;
+}
+
+.smallContainer{
+	position: relative;
+	background-color: #eee;
+	float: right;
+	width: 20%;
+	padding: 1%;
+	margin-left:1%;
+}
+
+/* ----------------------------- Personal Information -------------------------------- */
+
+#containerPersonalInfo{margin:0 0 15px 0;}
+
+.infoContainer>div{
+	width: 48%;
+	min-height: 1px;
+	float: left;
+	padding:0 1%;
+}
+
+.infoContainer {margin-bottom: 15px;}
+
+div#photoName div#image{
+	width: 177px;
+	height: 178px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+div#photoName div#image div#picture{
+	width: 177px;
+	height: 178px;
+	position: absolute;
+	background-image: url("../images/demo/imageShape2.png");
+}
+
+div#photoName div#image img{width: 100%;}
+
+div#photoName h4{
+	font-family: 'Oswald', sans-serif;
+	font-size: 26px;
+	color:#eb1485;
+	text-shadow: 1px 1px 0px rgba(255, 255, 255, 1);
+	text-align: center;
+	margin: 30px 0;
+	clear: both;
+}
+
+div.information{padding:1% !important;}
+
+h5{
+	font-family: 'Oswald', sans-serif;
+	font-size: 20px;
+	color:#8cc53d;
+	text-shadow: 1px 1px 0px rgba(255, 255, 255, 1);
+	border-bottom:1px solid #8cc53d;
+	padding: 0 0 10px 15px;
+	font-weight: 300;
+}
+
+table{
+	margin:15px auto;
+	width:90%;
+	overflow: hidden;
+}
+
+table tr{height: 25px;}
+
+table tr td{
+	line-height: 15px;
+	font-size: 12px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow:ellipsis;
+	text-shadow: 1px 1px 0px rgba(255, 255, 255, 1);
+}
+
+table tr td:hover{
+	text-overflow:inherit;
+	overflow:visible;
+}
+
+table tr td.key{
+	color:#717171;
+	width:20%;
+	padding-right:1%;
+	text-align: right;
+}
+
+table tr td.value{
+	width:78%;
+	color:#545454;
+	padding-left:5%;
+	font-weight: bold;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+}
+
+table tr td.value ul li{
+	padding-bottom:5px;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+}
+
+table tr td.value ul li a{
+	color:#545454;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+}
+
+table tr td.value ul li a:hover{
+	color:#0FBEE4;
+}
+
+table.second_table tr td.key{width:30%;}
+table.second_table tr td.value{width:40%;}
+
+table.third_table,
+#places table.third_table{
+	width: 100%;
+	margin: 10px 0 0 0;
+}
+
+table.third_table tr td.key{width:20%;}
+
+table.third_table tr td.value{
+	width:80%;
+	max-width: 40px;
+}
+
+table.third_table tr td.value ul li{
+	text-overflow:ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+#starContainer {
+	width:195px;
+	height:50px;
+	overflow: hidden;
+	margin: 15px auto 30px auto;
+}
+
+span.star {
+	display:block;
+	width:31px;
+	height:31px;
+	float:left;
+	background-image:url("../images/demo/star.png");
+	margin: 15px 10px 0 0px;
+}
+
+span.star.active {
+	background-image:url("../images/demo/yellow_star.png");
+}
+
+span.star.passive {
+	background-image:url("../images/demo/star.png");
+}
+
+span.star:last-child {
+	margin-right: 0;
+}
+
+/* ----------------------------- Personal Places -------------------------------- */
+
+ #map-canvas { 
+ 	height: 500px;
+ 	width: 98%;
+ 	position:relative;
+ 	margin:15px 0 0 0;
+}
+
+#placeName {
+	color: #777;
+	font-size: 25px;
+	position: relative;
+	top: 20px;
+	text-align: center;
+	text-shadow: 1px 1px 0 rgba(255, 255, 255, 1);
+	font-family: "Oswald",sans-serif;
+}
+
+#placeProfile {
+	width:250px;
+	height: 250px;
+	padding: 0;
+	overflow:hidden;
+	position: relative;
+	top: -10px;
+	/*left: -10px;*/
+	margin: 0 auto;
+}
+
+#place_legend{
+	list-style-type: none;
+	margin:-41px 0 0 20px;
+}
+
+#place_legend li{
+	width: 50%;
+	margin-bottom: 5px;
+	float: left;
+	color: #717171;
+	font-size: 13px;
+	text-shadow: 1px 1px 0 rgba(255, 255, 255, 1);
+}
+
+#place_legend li span.rect_shape{
+	width: 15px;
+	height: 15px;
+	margin:5px 5px 0 0;
+	display: inline-block;
+}
+
+#place_legend li span#sport{background-color: #e73410;}
+#place_legend li span#culture{background-color: #edd60e;}
+#place_legend li span#relax{background-color: #0fbee4;}
+#place_legend li span#foodWine{background-color: #f29225;}
+#place_legend li span#family{background-color: #eb1485;}
+#place_legend li span#nature{background-color: #8cc53d;}
+
+#activities table{margin-top: 40px;}
+
+#places table{
+	float: left;
+	width: 25%;
+	margin-top: 30px;
+}
+
+/* ----------------------------- Personal Interest -------------------------------- */
+
+.infoContainer div#header_btn{
+	background-color: #fff;
+	position: absolute;
+	height: 35px;
+	width:100% !important;
+	top:0;
+	left:0;
+	right: 0px;
+	padding: 0px;
+}
+
+.infoContainer div#header_btn ul li{
+	float: left;
+	height: 41px;
+	width: 181px;
+	cursor:pointer;
+}
+
+.infoContainer div#header_btn ul li a{
+	color:#fff;
+	display: block;
+	height: 35px;
+	text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.2);
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: lighter;
+	font-size: 12px;
+	line-height: 35px;
+	padding:0 0 0 40px;
+	background-repeat: no-repeat;
+	background-color: #eb1485;
+}
+
+.infoContainer div#header_btn ul li#drag a{
+	border-right: 1px solid #f158a8;
+	background-position: 10px center;
+	background-image: url("../images/demo/drag.png");
+}
+
+.infoContainer div#header_btn ul li#explore a{
+	border-left: 1px solid #be166e;
+	background-position: 20px center;
+	background-image: url("../images/demo/select.png");
+}
+
+.infoContainer div#header_btn ul li:hover,
+.infoContainer div#header_btn ul li.active{
+	background-image: url("../images/demo/btn_arrow.png");
+	background-repeat: no-repeat;
+	background-position: bottom center;
+}
+
+#containerPersonalInterest{
+	height: 850px;
+	overflow: hidden;
+	width:98.3%;
+	/*padding:0px 0 15px 0;*/
+}
+
+#containerPersonalInterest h5{
+	position:relative;
+	top:25px;
+	text-align:center;
+	margin:15px 0;
+}
+
+#draggable_div,
+#explore_div{
+	width: 98%;
+	height: 100%;
+	position:relative;
+	top:25px;
+	overflow: scroll;
+}
+
+/* ----------------------------- Holiday Idea -------------------------------- */
+
+#containerHolidayIdea{width:98.3%;}
+
+#containerHolidayIdea h5{
+	text-align:center;
+}
+
+#spider-chart{
+	width: 98%;
+	height: 400px;
+	margin: 0 auto
+}
+
+#spider-chart>div{width:100% !important;}
+
+/* ----------------------------- Error messages -------------------------------- */
+
+.errorContainer{width: 98%;}
+.errorContainer h5{text-align: center;}
+
+.errorContainer p{
+    color: #717171;
+    font-size: 13px;
+    line-height: 22px;
+    margin-top: 20px;
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, 1);
+    text-align: center;
+}
