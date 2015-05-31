@@ -1,0 +1,136 @@
+"#win_login" : {
+    titleImage: '/icon_navbar.png',
+    layout:'vertical'
+}
+
+"TextField": {
+    left:'5dp',
+    right: '5dp'
+}
+
+// "TextField[platform=android]":{
+    // softKeyboardOnFocus : Titanium.UI.Android.SOFT_KEYBOARD_SHOW_ON_FOCUS
+// }
+
+".container": {
+    height: '370dp',
+    width: '300dp'
+}
+
+
+"#lbl_username": {
+    top: '1dp',
+    left: '5dp',
+    color:'black',
+    font:{
+        fontSize:'20dp'
+    }
+}
+
+
+'#custom_txt_field':{
+    top: '30dp',
+    left:'5dp',
+    right: '7dp'
+}
+
+"#custom_txt_field[platform=android]":{
+    height: '40dp',
+}
+"#custom_txt_field[platform=ios]":{
+    height: '45dp',
+}
+
+"#field_codice_partner": {
+    keyboardType: Titanium.UI.KEYBOARD_DEFAULT,
+    returnKeyType: Titanium.UI.RETURNKEY_NEXT ,
+    left:'5dp',
+    right:'5dp',
+}
+
+
+
+
+
+"#lbl_password": {
+    top: '90dp',
+    left: '5dp',
+    color:'black',
+    font:{
+        fontSize:'20dp'
+    }
+}
+
+"#custom_pwd_field[platform=android]":{
+    height: '40dp',
+}
+"#custom_pwd_field[platform=ios]":{
+    height: '45dp',
+}
+
+
+"#custom_pwd_field":{
+    top: "120dp",
+    left:'5dp',
+    right: '7dp'
+}
+
+"#password": {
+    //hintText: 'password',
+    passwordMask: true,
+    keyboardType: Titanium.UI.KEYBOARD_DEFAULT,
+    returnKeyType: Ti.UI.RETURNKEY_DONE,
+    color: "black"
+}
+
+"#remembermeChk":{
+    top: '180dp',
+    left: '5dp',
+    width:'25dp',
+    height:'25dp',
+    borderColor:"black",
+    borderRadius:5,
+    borderWidth:1,
+    backgroundColor:"white",
+    value: false
+    // backgroundImage:'/radio_button_unchecked.png'
+}
+
+"#remembermeLbl":{
+    top: '180dp',
+    left: '35dp',
+    color : 'black',
+    font:{
+        fontSize:'18dp'
+    }
+}
+
+"#buttonLogin": {
+    top: '250dp',//'200dp',
+    left: '5dp',
+    right: '5dp',
+    height: '50dp',
+    font:{
+        fontSize:'20dp'
+    },
+    backgroundImage: '/footer.jpg'
+}
+
+"#buttonRegister": {
+    top: '310dp',//'200dp',
+    left: '5dp',
+    right: '5dp',
+    height: '50dp',
+    font:{
+        fontSize:'20dp'
+    },
+    backgroundImage: '/footer.jpg'
+}
+
+
+
+
+
+
+
+

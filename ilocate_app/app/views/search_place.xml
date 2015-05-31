@@ -1,0 +1,42 @@
+<Alloy>
+	<Window id="win_search_place">
+		<View id="action_bar">
+			<Label id="lbl_bar_title"></Label>
+		</View>
+		
+		<View id="v_option">
+			<Button id="b_walk" onClick="setWalk"></Button>
+			<Button id="b_car" onClick="setCar"></Button>
+			<Button id="b_bus" onClick="setBus"></Button>
+		</View>
+		
+		<View id="v_search">
+			<Button id="b_search"></Button>
+			<TextField id="field_search" onChange="onChange"></TextField>
+		</View>
+		
+		<View id="v_devider"></View>
+		
+		<ListView id="listView"  defaultItemTemplate="template" separatorColor='transparent' onItemclick="onItemClick">
+		 <Templates>  
+           	<ItemTemplate id="row" class="row_container" name="template" bindId="id_question"> 
+           		
+           		<View id="v_container" class="row_container">  
+           			<!-- <ImageView id="img_icon" bindId="img_icon"></ImageView>  -->
+           			<View id="v_lbl">
+           				<!-- <View id="v_lbl_title"> -->
+	           				<Label id="lbl_title" bindId="lbl_title" >asd</Label>
+	           			<!-- </View> -->
+	           			<!-- <View id="v_lbl_description">
+	           				<Label id="lbl_description" bindId="lbl_description"></Label>
+           				</View> -->
+           			</View>  
+           			<Button id="b_arrow"></Button> 
+           		</View>
+           	
+           	</ItemTemplate>
+        </Templates>
+	</ListView> 
+		
+	</Window>
+</Alloy>

@@ -1,0 +1,18 @@
+<Alloy>
+	<Window id="index" backgroundColor="gray">
+		<View id="action_bar">
+			<Label id="lbl_bar_title"></Label>
+			<Button id="b_login" onClick="openLogin"></Button>
+		</View>
+		<View id="v_map_container">
+			<View id="v_map"></View>
+			<Button id="b_step_by_step_route" onClick="showStepByStepRoute"></Button>
+			<Button id="b_building" onClick="openMapBuilding"></Button>
+			<Button id="b_navigation" onClick="startNavigation"></Button>
+		</View>
+		<View id="v_footer" onClick="doClick">
+			<Button id="b_search"></Button>
+			<Label id="lbl_search"></Label>
+		</View>
+	</Window>
+</Alloy>

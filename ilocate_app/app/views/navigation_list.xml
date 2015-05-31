@@ -1,0 +1,25 @@
+<Alloy>
+	<Window>
+		<View id="action_bar">
+			<Label id="lbl_bar_title"></Label>
+		</View>
+		<Button id="b_ls_nav" visible="false"></Button>
+		<ListView id="listView" defaultItemTemplate="template" separatorColor='transparent' >
+			 <Templates>  
+	           	<ItemTemplate id="row" name="template" bindId="id_question"> 
+	           		
+	           		<View id="v_container" bindId="v_container"> 
+	           			 
+	           			<ImageView id="img" bindId="img"></ImageView>
+	           			<View id="v_info">
+	           				<Label id="lbl_street_name" class="label" bindId="lbl_street_name"></Label>
+	           				<Label id="lbl_distance" class="label" bindId="lbl_distance"></Label>
+	           			</View>
+	           			
+	           		</View>
+	           	
+	           	</ItemTemplate>
+	        </Templates>
+       </ListView>
+	</Window>
+</Alloy>

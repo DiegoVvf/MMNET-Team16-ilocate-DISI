@@ -1,0 +1,1 @@
+module.exports={"dependencies":{},"url_proxy":"http://192.168.1.139:2345/api/locationbasedondata","url_geocoder":"http://02.cloud.i-locate.eu:8080/geocoder/geocodeList/","url_route":"http://192.168.1.139:8080/otp/routers/default/","url_openam":"http://01.cloud.i-locate.eu:8180","url_db":"http://10.196.200.169:3306/calldb.php"};

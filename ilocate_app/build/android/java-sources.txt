@@ -1,0 +1,8 @@
+"/Users/diegopuel/Documents/Titanium_Studio_Workspace/ilocate-app.git/build/android/gen/android/support/v7/appcompat/R.java"
+"/Users/diegopuel/Documents/Titanium_Studio_Workspace/ilocate-app.git/build/android/gen/it/tn/uh/ilocate/ApplicationStylesheet.java"
+"/Users/diegopuel/Documents/Titanium_Studio_Workspace/ilocate-app.git/build/android/gen/it/tn/uh/ilocate/AssetCryptImpl.java"
+"/Users/diegopuel/Documents/Titanium_Studio_Workspace/ilocate-app.git/build/android/gen/it/tn/uh/ilocate/IlocateActivity.java"
+"/Users/diegopuel/Documents/Titanium_Studio_Workspace/ilocate-app.git/build/android/gen/it/tn/uh/ilocate/IlocateAppInfo.java"
+"/Users/diegopuel/Documents/Titanium_Studio_Workspace/ilocate-app.git/build/android/gen/it/tn/uh/ilocate/IlocateApplication.java"
+"/Users/diegopuel/Documents/Titanium_Studio_Workspace/ilocate-app.git/build/android/gen/it/tn/uh/ilocate/R.java"
+"/Users/diegopuel/Documents/Titanium_Studio_Workspace/ilocate-app.git/build/android/gen/ti/modules/titanium/ui/R.java"

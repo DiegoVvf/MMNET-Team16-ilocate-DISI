@@ -1,0 +1,71 @@
+"#action_bar":{
+	top: 0
+}
+
+"#v_footer":{
+	bottom: 0
+}
+
+"#v_map_container":{
+	top: "50dp",
+	bottom: "65dp"
+}
+"#v_map":{
+	top:0,
+	left:0,
+	right:0,
+	bottom:0
+}
+
+"#b_search":{
+	left: "18%",
+	width: "30dp",
+	height: "30dp",
+	backgroundImage: "/whiteSearch.png",
+	touchEnabled: false
+}
+
+"#lbl_search":{
+	font:{
+		fontSize: "22dp"
+	},
+	text: L("search_place"),
+	touchEnabled: false
+}
+
+"#b_login":{
+	right: "10dp",
+	title: "Login",
+}
+
+"#b_step_by_step_route":{
+	right: "10dp",
+	bottom: "30dp",
+	width: "50dp",
+	height: "50dp",
+	backgroundImage: "/b_route.png",
+	backgroundColor: "transparent",
+	avtive: 0
+}
+
+
+
+
+"#b_building":{
+	right: "10dp",
+	bottom: "85dp",
+	width: "50dp",
+	height: "50dp",
+	backgroundImage: "/b_building_active.png",
+	backgroundColor: "transparent",
+	active: 0
+}
+"#b_navigation":{
+	right: "10dp",
+	bottom: "140dp",
+	width: "50dp",
+	height: "50dp",
+	backgroundImage: "/b_navigation_active.png",
+	backgroundColor: "transparent",
+	active: 1
+}

@@ -1,0 +1,30 @@
+<Alloy>
+    <Window id = "win_login" >
+        <!-- android menu -->
+        <View id="action_bar">
+            <Label id="lbl_bar_title"></Label>
+        </View>
+
+
+        <ScrollView scrollType="vertical">
+            <View class="container">
+                <Label id="lbl_username">Username</Label>
+
+                <View id="custom_txt_field">
+                    <TextField id="field_codice_partner" value="" onReturn="focusPassword" />
+                </View>
+
+                <Label id="lbl_password">Password</Label>
+                <View id="custom_pwd_field">
+                    <TextField id="password" value="" onReturn="login" onClick="changeFocusBorder"/>
+                </View>
+
+                <Button id="remembermeChk" onClick='rememberme' />
+                <Label id="remembermeLbl" onClick='rememberme'>Memorizza dati di accesso</Label>
+
+                <Button id="buttonLogin" onClick="login">Accedi</Button>
+                <Button id="buttonRegister" onClick="register">Register</Button>
+            </View>
+        </ScrollView>
+    </Window>
+</Alloy>

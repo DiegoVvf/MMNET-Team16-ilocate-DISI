@@ -1,0 +1,11 @@
+<Alloy>
+	<Window id="win_indoor" layout="vertical">
+		<View id="action_bar">
+			<Label id="lbl_bar_title"></Label>
+            <Button id="b_scan" onClick="scan">scan</Button>
+		</View>
+
+
+		<ImageView id="img_map"></ImageView>
+	</Window>
+</Alloy>

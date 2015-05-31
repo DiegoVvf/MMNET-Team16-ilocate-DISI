@@ -1,0 +1,145 @@
+"#win_search_place":{
+	layout: "vertical"
+}
+
+"#v_option":{
+	left:0,
+	right:0,
+	height: "60dp"
+}
+
+"#b_walk":{
+	top: 0,
+	bottom: 0,
+	width: "33%",
+	left: 0,
+	backgroundImage: "/b_walk_active.jpg"
+}
+"#b_car":{
+	top: 0,
+	bottom: 0,
+	width: "34%",
+	backgroundImage: "/b_car.jpg",
+	left: "33%"
+}
+"#b_bus":{
+	top: 0,
+	bottom: 0,
+	width: "33%",
+	backgroundImage: "/b_bus.jpg",
+	right: 0
+}
+
+
+"#v_search":{
+	left: "20dp",
+	right: "20dp",
+	top: "20dp",
+	left: "20dp",
+	height: "40dp",
+	borderRadius: "15dp",
+	borderWidth: 1,
+	borderColor: "gray"
+}
+
+"#b_search":{
+	backgroundImage: "/graySearch.png",
+	width: "20dp",
+	height: "20dp",
+	left: "20dp"
+}
+
+"#field_search":{
+	backgroundColor: "transparent",
+	font:{
+		fontFamily: "Raleway-Medium",
+		fontSize: "20dp"
+	},
+	color: "black",
+	left: "40dp",
+	right: "10dp"
+}
+
+"#v_devider":{
+	left: 0,
+	right: 0,
+	height: 1,
+	backgroundColor: "black",
+	top:"20dp"
+}
+
+".row_container":{
+	height: "90dp",
+	left: 0,
+	right:0
+}
+
+"#img_icon":{
+	left: "20dp",
+	width: "50dp",
+	height: "50dp"
+}
+
+"#v_lbl":{
+	left: "90dp",
+	right: "50dp",
+	top: "10dp",
+	bottom: "10dp"
+}
+ 
+"#lbl_title":{
+	left:0,
+	font:{
+		fontSize: "18dp"
+	},
+	color: "black"
+}
+
+ 
+
+"#b_arrow":{
+	right: "10dp",
+	width: "30dp",
+	height: "30dp",
+	backgroundColor: "red"
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

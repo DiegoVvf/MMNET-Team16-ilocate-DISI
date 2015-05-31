@@ -1,0 +1,60 @@
+'Window[platform=android]':{
+	backgroundColor:"white",
+	windowSoftInputMode:Ti.UI.Android.SOFT_INPUT_ADJUST_UNSPECIFIED,
+}
+
+'Window[platform=ios]':{
+	backgroundColor: "white",
+	top:"20dp" //
+}
+
+
+"#action_bar":{
+	backgroundImage: "/header.jpg",
+	left: 0,
+	right: 0,
+	height: "50dp"
+}
+
+"#v_footer":{
+	backgroundImage: "/footer.jpg",
+	left:0,
+	right:0,
+	height:"65dp"
+}
+
+
+
+"Label":{
+	font:{
+		fontFamily: "Raleway-Medium"
+	},
+	color: "white"
+}
+
+"#lbl_bar_title":{
+	font:{
+		fontSize: "30dp"
+	},
+	text: L("guide_me"),
+	bottom: 0
+}
+
+"TextField[platform=ios]":{
+	borderStyle: Ti.UI.INPUT_BORDERSTYLE_ROUNDED
+}
+
+"TextField": {
+	//width: '300dp',
+	height: '40dp',
+	autocapitalization: Ti.UI.TEXT_AUTOCAPITALIZATION_NONE,
+	borderWidth: 1,
+	borderColor: "#525252",
+	borderRadius: 5,
+	color: "black"
+}
+
+"Button":{
+	borderRadius: 5,
+	color:"white"
+}

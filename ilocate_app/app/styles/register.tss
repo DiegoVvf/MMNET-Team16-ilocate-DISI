@@ -1,0 +1,46 @@
+"#win_register" : {
+    titleImage: '/icon_navbar.png',
+    layout:'vertical'
+}
+
+"#lbl_email": {
+    top: '50dp',
+    left: '5dp',
+    color:'black',
+    font:{
+        fontSize:'20dp'
+    }
+}
+
+
+'#custom_txt_field':{
+    top: '30dp',
+    left:'5dp',
+    right: '7dp'
+}
+
+"#custom_txt_field[platform=android]":{
+    height: '40dp',
+}
+"#custom_txt_field[platform=ios]":{
+    height: '45dp',
+}
+
+
+"#field_email": {
+    keyboardType: Titanium.UI.KEYBOARD_EMAIL ,
+    returnKeyType: Titanium.UI.RETURNKEY_NEXT ,
+    left:'20dp',
+    right:'20dp',
+}
+
+"#b_register":{
+    top: "50dp",
+    left: '20dp',
+    right: '20dp',
+    height: '50dp',
+    font:{
+        fontSize:'20dp'
+    },
+    backgroundImage: '/footer.jpg'
+}

@@ -1,0 +1,10 @@
+<Alloy>
+	<Window id="win_settings">
+		<View layout="vertical">
+			<Label>Time in seconds</Label>
+			<TextField id="txt" value="10" color="black"></TextField>
+			
+			<Button id="b_start" onClick="start">Start</Button>
+		</View>
+	</Window>
+</Alloy>

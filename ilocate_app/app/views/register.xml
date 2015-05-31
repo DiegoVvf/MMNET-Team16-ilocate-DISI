@@ -1,0 +1,17 @@
+<Alloy>
+    <Window id = "win_register" >
+        <!-- android menu -->
+        <View id="action_bar">
+            <Label id="lbl_bar_title"></Label>
+        </View>
+
+        <Label id="lbl_email">Email</Label>
+
+        <View id="custom_txt_field">
+            <TextField id="field_email" value="erinda.jaupaj@u-hopper.com" />
+        </View>
+
+        <Button id="b_register" onClick="register">Register</Button>
+
+    </Window>
+</Alloy>

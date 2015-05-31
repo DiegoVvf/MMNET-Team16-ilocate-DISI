@@ -1,0 +1,43 @@
+
+".label":{
+	color: "black"
+}
+
+"#action_bar":{
+	top:0
+}
+
+"#listView":{
+	top: "60dp"
+}
+
+"#v_container":{
+	left: 0,
+	right: 0,
+	height: "70dp"
+}
+
+"#img":{
+	left: "20dp",
+	width: "30dp",
+	height: "30dp"
+}
+
+"#v_info":{
+	left: "100dp",
+	right: 0,
+	top: "10dp",
+	bottom: "10dp"
+}
+
+"#lbl_street_name":{
+	left :0,
+	top: 0,
+	height: "30dp"
+}
+
+"#lbl_distance":{
+	left :0,
+	bottom: 0,
+	height: "30dp"
+}
